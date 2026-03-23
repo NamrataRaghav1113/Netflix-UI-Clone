@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .s1 {
+            height: 600px;
+            width: 100%;
+            background-image: url(https://poggers.com/cdn/shop/articles/a904acfccdd04aabc258aad622181b27_2000x1125_crop_center.webp?v=1708120355);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .h1 {
+            color: red;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+        
+        .h2 {
+            color: white;
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: capitalize;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        .play {
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: transparent;
+            text-align: center;
+            margin: 10px;
+            margin-left: 20px;
+            transition: transform 0.3s;
+            border: 1px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .play:hover {
+            transform: scale(1.1);
+        }
+
+        .my_list {
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: transparent;
+            text-align: center;
+            margin: 10px;
+            margin-left: 10px;
+            text-transform: capitalize;
+            transition: transform 0.3s;
+            border: 1px solid white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .my_list:hover {
+            transform: scale(1.1);
+        }
+
+        .p1 {
+            color: white;
+            text-align: left;
+            max-width: 500px;
+            line-height: 1.5;
+            padding: 20px 20px 0 20px;
+        }
+
+        .s2 {
+            min-height: 600px;
+            width: 100%;
+            background-color: black;
+            padding-left: 20px;
+        }
+
+        .h3,
+        .h4,
+        .h5 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 25px;
+            padding-top: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .d1,
+        .d2,
+        .d3,
+        .d4 {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            row-gap: 5px;
+            column-gap: 5px;
+            padding-left: 20px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            overflow-x: auto;
+        }
+
+        .d1::-webkit-scrollbar,
+        .d2::-webkit-scrollbar,
+        .d3::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .img1 {
+            height: 200px;
+            width: 140px;
+            object-fit: cover;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .img1:hover {
+            transform: scale(1.1);
+        }
+
+        .img2 {
+            height: 200px;
+            width: 150px;
+            flex-shrink: 0;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .img2:hover {
+            transform: scale(1.1);
+        }
+
+        .s3 {
+            background-color: #000;
+            color: #808080;
+            font-family: Arial, sans-serif;
+            padding: 0;
+        }
+
+        .f1 {
+            background-color: #210506;
+            height: 5px;
+        }
+
+        .f2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 80px;
+        }
+
+        .f3-left {
+            flex-basis: 30%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dd131d;
+            margin-bottom: 5px;
+        }
+
+        .f4 {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .f5-right {
+            display: flex;
+            flex-basis: 65%;
+            justify-content: space-between;
+        }
+
+        .f6 {
+            flex-basis: 30%;
+        }
+
+        .f6 h3 {
+            font-size: 16px;
+            color: #808080;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .f6 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .f6 li {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="s1">
+        <h1 class="h1">Netflix</h1>
+        <h1 class="h2">Harry potter and the sorcerer's stone</h1>
+        <button type="submit" class="play">▶ Play </button>
+        <button type="submit" class="my_list">my list</button>
+        <p class="p1">
+            Harry, an orphaned boy mistreated by his aunt and uncle, discovers he is a wizard on his eleventh birthday.
+            He learns his parents were killed by the dark wizard Voldemort, who also tried to kill him but failed,
+            leaving a lightning scar on his forehead.At Hogwarts School of Witchcraft and Wizardry, Harry befriends Ron
+            Weasley and Hermione Granger, becomes a celebrated figure in the wizarding world, and begins his journey to
+            protect the Sorcerer's Stone from Voldemort's grasp
+        </p>
+
+    </section>
+    <section class="s2">
+        <h1 class="h3">Today's top picks for you</h1>
+        <div class="d1">
+            <img src="https://resizing.flixster.com/3EAqGwZj6o8zRZSzkqDN-XWjjqU=/fit-in/705x460/v2/https://resizing.flixster.com/Ou5tTSihOsijaC9OoR2mmL54cj0=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JmZGZhNmFlLTYzYmUtNGRjMy1hMThlLTQ1NTE1NzBhZmNmNy5qcGc="
+                alt="1" class="img1">
+            <img src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/harry-potter-and-the-chamber-of-secrets-et00310060-09-04-2021-03-52-28.jpg"
+                alt="2" class="img1">
+            <img src="https://images.moviesanywhere.com/1da041f4db01054fe099a9be01ddb6a2/f981fa35-0a7a-449a-ba99-f54a724ce278.jpg"
+                alt="3" class="img1">
+            <img src="https://images.moviesanywhere.com/d489bfce9aef55a5271d8a7d7d42bdb6/d265259e-3386-4a1e-b95f-cc52f30ee6fb.jpg"
+                alt="4" class="img1">
+            <img src="https://images.moviesanywhere.com/e1752b37b6a6277dc16ed75b55b4883f/688a801d-4a1b-424e-b949-80253e07d0e2.jpg"
+                alt="5" class="img1">
+            <img src="https://images.moviesanywhere.com/144db183a81872d493990cb46599dc92/78f6e38f-1223-4dd9-b5e2-98181d340dde.jpg"
+                alt="6" class="img1">
+            <img src="https://raisingchildren.net.au/__data/assets/image/0020/51446/harry-potter-and-the-deathly-hallows-part-1.jpg"
+                alt="7" class="img1">
+            <img src="https://images.moviesanywhere.com/de6092b467fc299fdf79a51dfa7f9710/12b877a3-28de-46ff-820f-dd8bf07e8edb.jpg"
+                alt="8" class="img1">
+        </div>
+        <h1 class="h4">Funny movies</h1>
+        <div class="d2">
+            <img src="https://www.themobileindian.com/public/uploads/picture-story/2020/1356/Chhalaang.jpeg" alt="9"
+                class="img2">
+            <img src="https://wp.scoopwhoop.com/wp-content/uploads/2024/07/04120628/Chennai-Express-poster-scaled.jpg"
+                alt="10" class="img2">
+            <img src="https://assets.gqindia.com/photos/67c02c3c972294d01e09650c/master/w_1600%2Cc_limit/dharam-sankat.jpg"
+                alt="11" class="img2">
+            <img src="https://static.beebom.com/wp-content/uploads/2024/04/mimi.jpg?w=563&quality=75" alt="12"
+                class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMkpl7a12zuXtlUb2vDLtsZ6OHeGV_LOc6QA&s"
+                alt="13" class="img2">
+            <img src="https://scrolldroll.com/wp-content/uploads/2022/06/badhaai-do-hindi-comedy-movies-netflix-1.jpg"
+                alt="14" class="img2">
+            <img src="https://m.media-amazon.com/images/M/MV5BYTk1ZjFiM2EtZGQ1My00MjRjLWEwZDYtMTI1YTlhMmIzZjk0XkEyXkFqcGc@._V1_.jpg"
+                alt="15" class="img2">
+            <img src="https://assets.gqindia.com/photos/67c02c39a4b71b49fac5edd6/master/w_1600%2Cc_limit/chup-chup-ke-440x570.jpg"
+                alt="16" class="img2">
+            <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/06/New-Project-2023-06-22T181952.253.jpg?size=*:900"
+                alt="17" class="img2">
+            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/07/rajma-chawal-2018.jpg" alt="18"
+                class="img2">
+            <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/11/Sab-Moh-Maaya-Hai-306x393.jpeg"
+                alt="19" class="img2">
+        </div>
+        <h1 class="h5">Top horror movies </h1>
+        <div class="d3">
+            <img src="https://assets.gqindia.com/photos/67c03d4b93ba6ad66057d8ce/master/w_1600%2Cc_limit/Pari.jpg"
+                alt="Pari" class="img2">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzc5OGI3Y2YtOTY0ZS00NDI1LTliMDktYTI2YmU4MGI5MDBmXkEyXkFqcGc@._V1_.jpg"
+                alt="roohi" class="img2">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzg4ZDU2Y2YtNzFiMC00OGYyLTgwYjgtMDA1MzBhMWE3ZmVkXkEyXkFqcGc@._V1_.jpg"
+                alt="bhoot police" class="img2">
+            <img src="https://assets.vogue.in/photos/5ee9bc6f800c753aed1a479b/master/pass/horror-comedy%20movies.jpg"
+                alt="stree" class="img2">
+            <img src="https://scrolldroll.com/wp-content/uploads/2022/05/Ghoul-Best-Indian-Horror-Web-Series.jpg"
+                alt="Ghoul" class="img2">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGMzNGE1YTEtNjg1NS00N2Q3LWJhOWItZDFmOWE2NjU4OGY3XkEyXkFqcGc@._V1_.jpg"
+                alt="bullbul" class="img2">
+            <img src="https://scrolldroll.com/wp-content/uploads/2023/01/Bhool-bhulaiyaa-Bollywood-horror-comedy-movies.jpg"
+                alt="Bhool-Bhulaiyaa-3" class="img2">
+            <img src="https://scrolldroll.com/wp-content/uploads/2023/01/bhediya-bollywood-horror-comedy-movies.jpg"
+                alt="Bhediya" class="img2">
+            <img src="https://images.news18.com/webstories/uploads/2025/04/MV5BNTNmZmQzN2MtYjk3ZS00OWMxLTlmODQtOWQ3YjZmZWZjYzFiXkEyXkFqcGc@._V1_FMjpg_UX1000_-2025-04-c46db0e3766fa057d4d6bc9559cfef97.jpg"
+                alt="mansion 24" class="img2">
+            <img src="https://resizing.flixster.com/4piFgrjX_dbjitE78ILbti9RWZs=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzY3ZWI3ZWI0LTJkNTYtNGViZC05NjIxLTY4Y2NkYTViOGE1Mi5qcGc="
+                alt="Gauraiya Live" class="img2">
+            <img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2025/08/Weapons-306x393.jpg" alt="Weapons"
+                class="img2">
+            <img src="https://img-cdn.publive.online/fit-in/900x1600/filters:format(webp)/odishatv/media/post_attachments/uploadimage/library/16_9/16_9_0/recent_photo_1718253438.webp"
+                alt="Bhool-bhulaiyaa-1" class="img2">
+        </div>
+        <h1 class="h5">Top tranding movies</h1>
+        <div class="d4">
+            <img src="https://static.digit.in/OTT/v2/images/dhadak-2-1521235.jpg" alt="dhadak 2" class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgJg-dL0HXZQ_p4IjKIXaUnjY16u9Y-KbC18hsrpVusYunFiVkTUFkS_GD8W3WCi0ihfI&usqp=CAU"
+                alt="oho ithan baby" class="img2">
+            <img src="https://flixpatrol.com/runtime/cache/files/posters/a/w350/anszc4qlswdcggtflfno8dcjkn6.jpg"
+                alt="The game" class="img2">
+            <img src="https://images.news18.com/webstories/uploads/2025/06/image-2025-06-28baec23676339afd0191ac095de24c4.png"
+                alt="the sikandar" class="img2">
+            <img src="https://www.cinejosh.com/newsimg/newsmainimg/lucky-baskhar-continues-to-break-records_b_0112240321.jpg"
+                alt="lucky bakshak" class="img2">
+            <img src="https://images.news18.com/webstories/uploads/2025/06/image-2025-06-1fb91a6d84fdba5035e7882ee3ceb9ee.png"
+                alt="chhava" class="img2">
+            <img src="https://static.digit.in/product/tr:n-ott_home_crousel/mahavtar-narsimha-poster-4d13d1214b.jpeg"
+                alt="narsimha" class="img2">
+            <img src="https://preview.redd.it/top-10-most-watched-indian-movies-and-series-on-netflix-v0-n3n9v92n3b7c1.jpg?width=640&format=pjpg&auto=webp&s=ed1af675d101226861d56ee86afd4061382c013b"
+                alt="gumrah" class="img2">
+            <img src="https://images.justwatch.com/poster/332938453/s332/son-of-sardaar-2" alt="son of sardar 2"
+                class="img2">
+            <img src="https://preview.redd.it/my-must-watch-2024-films-on-netflix-amazon-recommendations-v0-s6wxipqp31ae1.jpg?width=283&format=pjpg&auto=webp&s=bc14a78a2bf11c82aa2c0c29fb678477133951c9"
+                alt="agni" class="img2">
+            <img src="https://i0.wp.com/indiacurrents.com/wp-content/uploads/2019/11/eea61c81581189.5d039211432ce.jpg?resize=206%2C297&ssl=1"
+                alt="article 15" class="img2">
+        </div>
+
+    </section>
+    <section class="s3">
+        <div class="f1"></div>
+        <div class="f2">
+            <div class="f3-left">
+                <div class="logo">NETFLIX</div>
+                <div class="f4">Netflix India</div>
+                >
+            </div>
+            <div class="f5-right">
+                <div class="f6">
+                    <h3>EXPLORE</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Account</li>
+                        <li>Ways to Watch</li>
+                        <li>Only on Netflix</li>
+                    </ul>
+                </div>
+                <div class="f6">
+                    <h3>LEGAL</h3>
+                    <ul>
+                        <li>Cookie Preferences</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</lif>
+                        <li>Gift Card Terms</li>
+                        <li>Legal Notices</li>
+                        <li>Corporate Informatio></li>
+                    </ul>
+                </div>
+                <div class="f6">
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Speed Test</li>
+                        <li>Contact Us</li>
+                        <li>Jobs</li>
+                        <li>Media Center</li>
+                        <li>Investor Relations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
